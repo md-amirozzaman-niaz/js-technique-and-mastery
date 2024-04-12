@@ -52,7 +52,8 @@ Dynamically typed languages like Python and JavaScript offer more flexibility, b
     2. **Array**.
     3. [**Map**](https://javascript.info/map-set)
     4. [**Set**](https://javascript.info/map-set)
-
+### Mention some [Standard built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
+#### Standard objects by category
 ### Type conversion in javascript
 [Read details](https://javascript.info/type-conversions)
 ### What is `Function Expression`?
