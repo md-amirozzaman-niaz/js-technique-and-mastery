@@ -163,6 +163,17 @@ console.log(composedFunction('hello')) // output 'olleh'
 Lazy evaluation is a strategy where an expression is not evaluated until its value is actually needed. In JavaScript, this can be achieved using higher-order functions or by using generator functions. This technique can help improve performance and optimize memory usage in scenarios where computations are resource-intensive or when dealing with potentially infinite data sets.
 ### Pipeline in Javascript
 In JavaScript, a pipeline is a sequence of functions where the output of one function becomes the input of the next. It's a common pattern used for data transformation and processing, allowing you to compose complex operations by chaining together simpler functions.
+
+**Example**
+```js
+const split = str => str.split('');
+const reverse = arr => arr.reverse();
+const join = arr => arr.join('');
+const makePipeline = (...functions) => (str) => functions.reduce((acc,fn) => fn(acc),str);
+
+const startPiping= makePipeline(split,reverse,join,split);
+console.log(startPiping('hello')); // output [ 'o', 'l', 'l', 'e', 'h' ]
+```
 ### Task queue, Micro Task queue, Macro task queue
 
 ### ProtoType in javascript
