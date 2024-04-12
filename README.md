@@ -17,14 +17,15 @@ Dynamically typed languages like Python and JavaScript offer more flexibility, b
 * **SpiderMonkey** written in 
 * **QuickJs** is an embeddable JS engine written in C
 * **JavaScriptCore** written in
+* [**Hermes**](https://github.com/facebook/hermes/) is a JavaScript engine optimized for fast start-up of **React Native** apps
+* [**Duktape**](https://github.com/svaarala/duktape) - embeddable Javascript engine with a focus on portability and compact footprint
+* **txiki**(https://github.com/saghul/txiki.js) A tiny JavaScript runtime
 
 ### Mention some javascript Runtime environment?
 
-* **Node.js**
-* (**Bun**)[https://github.com/oven-sh/bun] At its core is the Bun runtime, a fast JavaScript runtime designed as a drop-in replacement for Node.js. It's written in **Zig** and powered by **JavaScriptCore** under the hood, dramatically reducing startup times and memory usage.
-* (**LLRT**)[https://github.com/awslabs/llrt] LLRT (Low Latency Runtime) is a lightweight JavaScript runtime designed to address the growing demand for fast and efficient Serverless applications. LLRT offers up to over 10x faster startup and up to 2x overall lower cost compared to other JavaScript runtimes running on AWS Lambda.
-
-It's built in Rust, utilizing QuickJS as JavaScript engine, ensuring efficient memory usage and swift startup.
+* [**Node.js**](https://github.com/nodejs/node) powered by c 
+* [**Bun**](https://github.com/oven-sh/bun) At its core is the Bun runtime, a fast JavaScript runtime designed as a drop-in replacement for Node.js. It's written in **Zig** and powered by **JavaScriptCore** under the hood, dramatically reducing startup times and memory usage.
+* [**LLRT**](https://github.com/awslabs/llrt) LLRT (Low Latency Runtime) is a lightweight JavaScript runtime designed to address the growing demand for fast and efficient Serverless applications. LLRT offers up to over 10x faster startup and up to 2x overall lower cost compared to other JavaScript runtimes running on AWS Lambda. It's built in Rust, utilizing QuickJS as JavaScript engine, ensuring efficient memory usage and swift startup.
 
 ### Primitive data type and non primitive data type?
 
