@@ -57,11 +57,13 @@ Dynamically typed languages like Python and JavaScript offer more flexibility, b
 [Read details](https://javascript.info/type-conversions)
 ### What is `Function Expression`?
 [Read details](https://javascript.info/function-expressions)
+### What is iterable?
+[Read details](https://javascript.info/iterable)
 ### Currying in javascritpt
 
-### composition in javascript
+### Composition in javascript
 
-### closure in javascript
+### Closure in javascript
 
 ### Task queue, Micro Task queue, Macro task queue
 
@@ -69,13 +71,13 @@ Dynamically typed languages like Python and JavaScript offer more flexibility, b
 
 ### Recursion in javascript
 
-### Why tail recursion optimal from pure recursion?
+### Why **Tail Recursion** is optimal from pure **Recursion**?
 
 ### What will print when `console.log()` execute and why?
 
 ### what are the difference between `var`, `let`, and `const`?
 
-### what is the difference between `Promise` and `async await`?
+### what is the difference between `Promise` and `Async await`?
 
 ### How behave `Post increment/ decrement` and `Pre increment/ decrement` operator?
 
