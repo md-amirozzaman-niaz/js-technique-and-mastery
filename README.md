@@ -56,15 +56,15 @@ Dynamically typed languages like Python and JavaScript offer more flexibility, b
 ### Mention some [Standard built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
 #### Standard objects by category
 1. **Value properties** :These global properties return a simple value. They have no properties or methods.
-    - globalThis
-    - Infinity
-    - NaN
-    - undefined
+    - `globalThis`
+    - `Infinity`
+    - `NaN`
+    - `undefined`
 2. **Fundamental objects** :These objects represent fundamental language constructs.
-    - Object
-    - Function
-    - Boolean
-    - Symbol
+    - `Object`
+    - `Function`
+    - `Boolean`
+    - `Symbol`
 3. **Numbers and Dates** :These are the base objects representing numbers, dates, and mathematical calculations.
     - Number
     - BigInt
@@ -82,12 +82,25 @@ Dynamically typed languages like Python and JavaScript offer more flexibility, b
     - String
     - RegExp
 6. **Indexed collections** : These objects represent collections of data which are ordered by an index value.
-    - Array
+    - [**Array**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+    - [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects#indexed_collections)
 7. **Keyed collections** :These objects represent collections which use keys.
-    - Map
-    - Set
+    - [**Map**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
+    - [**Set**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
     - WeakMap
     - WeakSet
+8. **Control abstraction objects** :Control abstractions can help to structure code, especially async code (without using deeply nested callbacks, for example).
+    - [**Iterator**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Iterator)
+    - AsyncIterator
+    - [**Promise**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+    - GeneratorFunction
+    - AsyncGeneratorFunction
+    - [**Generator**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator)
+    - AsyncGenerator
+    - [**AsyncFunction**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncFunction)
+9. **Reflection** :
+    - [**Reflect**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect)
+    - [**Proxy**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy)
 
 ### Type conversion in javascript
 [Read details](https://javascript.info/type-conversions)
