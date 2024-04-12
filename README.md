@@ -4,19 +4,20 @@
 JavaScript is a prototype-based language, which means that it uses prototypes to inherit properties and methods from one object to another. In JavaScript, objects can be linked to other objects, forming a prototype chain. Since JavaScript is a loosely typed language, you are not required to correctly predict the kind of data that will be kept in a variable.
 Dynamically typed languages like Python and JavaScript offer more flexibility, but they might lead to runtime errors due to unexpected type mismatches. On the other hand, statically typed languages are more verbose, which developers might sometimes find inconvenient, especially when rapid prototyping is required.
 
-### Mention some Browser Engine name?
+### Mention some Browser Engine (also refer as Rendering Engine) name?
 
-* **Webkit** Apple
-* **Gecko** Mozila
-* **Blink** Google
+* **Webkit** developed by Apple (used by *Safari*, *Chrome*)
+* **Gecko** developed by Mozila (used by *Firefox*)
+* **Blink** developed by Google (*Chrome* and all other Chromium-based browsers, notably *Microsoft Edge*, *Brave*, *Vivaldi*, *Samsung Internet* and *Opera*)
   
 ### Mention some javascript engine name?
 
-* **Chakra** written in c++ for microsoft Edge browser
+* **Chakra** written in c++ for microsoft used by Edge browser
 * [**V8**](https://v8.dev/) V8 is Google’s open source high-performance JavaScript and WebAssembly engine, written in C++. It is used in Chrome and in Node.js, among others. It implements [ECMAScript](https://tc39.es/ecma262/) and [WebAssembly](https://webassembly.github.io/spec/core/), and runs on Windows 7 or later, macOS 10.12+, and Linux systems that use x64, IA-32, ARM, or MIPS processors. V8 can run standalone, or can be embedded into any C++ application.
 * [**SpiderMonkey**](https://spidermonkey.dev/) is Mozilla’s JavaScript and [WebAssembly](https://webassembly.github.io/spec/core/) Engine, used in Firefox, Servo and various other projects. It is written in C++, Rust and JavaScript. You can embed it into C++ and Rust projects, and it can be run as a stand-alone shell. It can also be compiled to WASI; see our online demo.
-* **QuickJs** is an embeddable JS engine written in C
-* **JavaScriptCore** written in Objective-c
+* [**JavaScriptCore**](https://developer.apple.com/documentation/javascriptcore) written in Objective-c, used by Safari browser.
+
+* [**QuickJs**](https://github.com/bellard/quickjs) is an embeddable JS engine written in C.
 * [**Hermes**](https://github.com/facebook/hermes/) is a JavaScript engine optimized for fast start-up of **React Native** apps.
 * [**Duktape**](https://github.com/svaarala/duktape) - embeddable Javascript engine with a focus on portability and compact footprint.
 
