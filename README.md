@@ -38,18 +38,18 @@ Dynamically typed languages like Python and JavaScript offer more flexibility, b
 * [**stdlib**](https://github.com/stdlib-js/stdlib) (/ˈstændərd lɪb/ "standard lib") is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.
 
 ### Primitive data type and non primitive data type?
-1 **Primitive** The predefined data types provided by JavaScript language are known as primitive data types. Primitive data types are also known as in-built data types.
-    1.1 String.
-    1.2 Number.
-    1.3 Bigint.
-    1.4 Boolean.
-    1.5 Undefined.
-    1.6 Null.
-    1.7 Symbol.
-    1.8 Object.
-2 **Non Primitive** The data types that are derived from primitive data types of the JavaScript language are known as non-primitive data types. It is also known as derived data types or reference data types.
-    2.1. Object.
-    2.2. Array.
+1. **Primitive** The predefined data types provided by JavaScript language are known as primitive data types. Primitive data types are also known as in-built data types.
+    1. String.
+    2. Number.
+    3. Bigint.
+    4. Boolean.
+    5. Undefined.
+    6. Null.
+    7. Symbol.
+    8. Object.
+2. **Non Primitive** The data types that are derived from primitive data types of the JavaScript language are known as non-primitive data types. It is also known as derived data types or reference data types.
+    1. Object.
+    2. Array.
 
 ### currying in javascritpt
 
