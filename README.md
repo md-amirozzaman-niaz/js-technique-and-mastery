@@ -113,25 +113,12 @@ Dynamically typed languages like Python and JavaScript offer more flexibility, b
 
 JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables, classes, or imports to the top of their scope, prior to execution of the code.
 
+### Higher Order Function
+
+In JavaScript, a higher-order function is a function that takes another function as an argument or returns a function as its result. Higher-order functions are a fundamental concept in functional programming and enable powerful and flexible programming paradigms such as function `composition`, `currying`, and `lazy evaluation`.
+
 ### Closure in javascript
 
-### Composition in javascript
-
-Function composition is a fundamental concept in functional programming where two or more functions are combined to produce a new function. The output of one function becomes the input of another, allowing you to create complex behavior by chaining together simpler functions.
-
-**Example**
-
-```js
-const split = str => str.split('');
-const reverse = arr => arr.reverse();
-const join = arr => arr.join('');
-const compose = (...functions) => (str) => functions.reduce((acc,fn) => fn(acc),str);
-
-// reverse a string
-const composedFunction= compose(split,reverse,join);
-console.log(composedFunction('hello')) // output 'olleh'
-
-```
 ### Currying in javascript
 Currying is a functional programming technique in JavaScript where a function with multiple arguments is transformed into a sequence of nested functions, each taking a single argument. The curried function returns a new function for each argument until all arguments have been supplied, at which point it executes and returns the result.
 
@@ -154,6 +141,26 @@ const totalPrice= tax(0.15);
 console.log(totalPrice(30)); // output 34.5
 console.log(totalPrice(100)); // output 115
 ```
+
+### Composition in javascript
+
+Function composition is a fundamental concept in functional programming where two or more functions are combined to produce a new function. The output of one function becomes the input of another, allowing you to create complex behavior by chaining together simpler functions.
+
+**Example**
+
+```js
+const split = str => str.split('');
+const reverse = arr => arr.reverse();
+const join = arr => arr.join('');
+const compose = (...functions) => (str) => functions.reduce((acc,fn) => fn(acc),str);
+
+// reverse a string
+const composedFunction= compose(split,reverse,join);
+console.log(composedFunction('hello')) // output 'olleh'
+
+```
+
+### Pipeline in Javascript
 ### Task queue, Micro Task queue, Macro task queue
 
 ### ProtoType in javascript
