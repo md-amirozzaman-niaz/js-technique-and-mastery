@@ -135,8 +135,7 @@ console.log(composedFunction('hello')) // output 'olleh'
 ### Currying in javascript
 Currying is a functional programming technique in JavaScript where a function with multiple arguments is transformed into a sequence of nested functions, each taking a single argument. The curried function returns a new function for each argument until all arguments have been supplied, at which point it executes and returns the result.
 
-**Example**
-**Usual Implementation**
+**As Usual Implementation**
 ```js
 
 const totalPrice = (price,taxAmount) => price+(price*taxAmount);
