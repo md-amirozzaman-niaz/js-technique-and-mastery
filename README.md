@@ -55,12 +55,40 @@ Dynamically typed languages like Python and JavaScript offer more flexibility, b
     4. [**Set**](https://javascript.info/map-set)
 ### Mention some [Standard built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
 #### Standard objects by category
-1. Fundamental objects
-   These objects represent fundamental language constructs.
-- Object
-- Function
-- Boolean
-- Symbol
+1. **Value properties** :These global properties return a simple value. They have no properties or methods.
+    - globalThis
+    - Infinity
+    - NaN
+    - undefined
+2. **Fundamental objects** :These objects represent fundamental language constructs.
+    - Object
+    - Function
+    - Boolean
+    - Symbol
+3. **Numbers and Dates** :These are the base objects representing numbers, dates, and mathematical calculations.
+    - Number
+    - BigInt
+    - Math
+    - Date
+4. **Function properties** : These global functions—functions which are called globally, rather than on an object—directly return their results to the caller.
+    - eval()
+    - isFinite()
+    - isNaN()
+    - parseFloat()
+    - parseInt()
+    - decodeURI()
+    - encodeURI()
+5. **Text processing** :These objects represent strings and support manipulating them.
+    - String
+    - RegExp
+6. **Indexed collections** : These objects represent collections of data which are ordered by an index value.
+    - Array
+7. **Keyed collections** :These objects represent collections which use keys.
+    - Map
+    - Set
+    - WeakMap
+    - WeakSet
+
 ### Type conversion in javascript
 [Read details](https://javascript.info/type-conversions)
 ### What is `Function Expression`?
