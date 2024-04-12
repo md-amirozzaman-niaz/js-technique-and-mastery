@@ -108,12 +108,51 @@ Dynamically typed languages like Python and JavaScript offer more flexibility, b
 [Read details](https://javascript.info/function-expressions)
 ### What is iterable?
 [Read details](https://javascript.info/iterable)
-### Currying in javascritpt
 
-### Composition in javascript
+### Hoisting
+
+JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables, classes, or imports to the top of their scope, prior to execution of the code.### Currying in javascritpt
 
 ### Closure in javascript
 
+### Composition in javascript
+
+```js
+const split = str => str.split('');
+const reverse = arr => arr.reverse();
+const join = arr => arr.join('');
+const compose = (...functions) => (str) => functions.reduce((acc,fn) => fn(acc),str);
+
+// reverse a string
+const composedFunction= compose(split,reverse,join);
+console.log(composedFunction('hello')) // output 'olleh'
+
+```
+### Currying in javascript
+
+```js
+let prefix='#';
+
+const curry= (prefix,str) => `${prefix}${str}`;
+
+const addPrefix = (str) => curry(prefix,str);
+
+console.log(addPrefix('hello')); // output '#hello'
+console.log(addPrefix('world')); // output '#world'
+```
+Another example
+
+```js
+let tax=0.15;
+
+const curryTax= (tax,price) => price*tax;
+
+const calculateTax = (price) => curryTax(tax,price);
+const totalPrice = (price) => price+calculateTax(price);
+
+console.log(totalPrice(30)); // output 34.5
+console.log(totalPrice(100)); // output 115
+```
 ### Task queue, Micro Task queue, Macro task queue
 
 ### ProtoType in javascript
