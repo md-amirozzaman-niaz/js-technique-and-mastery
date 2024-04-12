@@ -35,7 +35,7 @@ Dynamically typed languages like Python and JavaScript offer more flexibility, b
 * [**txiki**](https://github.com/saghul/txiki.js) A tiny JavaScript runtime
 
 ### Mention some Standard Library
-* [**Core-js**](https://github.com/zloirock/core-js)
+* [**Core-js**](https://github.com/zloirock/core-js) polyfills library.
 * [**stdlib**](https://github.com/stdlib-js/stdlib) (/ˈstændərd lɪb/ "standard lib") is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.
 
 ### Primitive data type and non primitive data type?
@@ -55,6 +55,12 @@ Dynamically typed languages like Python and JavaScript offer more flexibility, b
     4. [**Set**](https://javascript.info/map-set)
 ### Mention some [Standard built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
 #### Standard objects by category
+1. Fundamental objects
+   These objects represent fundamental language constructs.
+- Object
+- Function
+- Boolean
+- Symbol
 ### Type conversion in javascript
 [Read details](https://javascript.info/type-conversions)
 ### What is `Function Expression`?
