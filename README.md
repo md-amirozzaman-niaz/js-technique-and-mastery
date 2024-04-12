@@ -50,8 +50,14 @@ Dynamically typed languages like Python and JavaScript offer more flexibility, b
 - **Non Primitive** The data types that are derived from primitive data types of the JavaScript language are known as non-primitive data types. It is also known as derived data types or reference data types.
     1. **Object**.
     2. **Array**.
+    3. [**Map**](https://javascript.info/map-set)
+    4. [**Set**](https://javascript.info/map-set)
 
-### currying in javascritpt
+### Type conversion in javascript
+[Read details](https://javascript.info/type-conversions)
+### What is `Function Expression`?
+[Read details](https://javascript.info/function-expressions)
+### Currying in javascritpt
 
 ### composition in javascript
 
