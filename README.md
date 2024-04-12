@@ -117,6 +117,10 @@ JavaScript Hoisting refers to the process whereby the interpreter appears to mov
 
 ### Composition in javascript
 
+Function composition is a fundamental concept in functional programming where two or more functions are combined to produce a new function. The output of one function becomes the input of another, allowing you to create complex behavior by chaining together simpler functions.
+
+**Example**
+
 ```js
 const split = str => str.split('');
 const reverse = arr => arr.reverse();
@@ -129,29 +133,27 @@ console.log(composedFunction('hello')) // output 'olleh'
 
 ```
 ### Currying in javascript
+Currying is a functional programming technique in JavaScript where a function with multiple arguments is transformed into a sequence of nested functions, each taking a single argument. The curried function returns a new function for each argument until all arguments have been supplied, at which point it executes and returns the result.
 
-Example
+**Example**
 
 ```js
-let tax=0.15;
 
-const curryTax= (tax,price) => price*tax;
+const totalPrice = (price,taxAmount) => price+(price*taxAmount);
 
-const calculateTax = (price) => curryTax(tax,price);
-const totalPrice = (price) => price+calculateTax(price);
+console.log(totalPrice(30,0.15)); // output 34.5
+console.log(totalPrice(100,0.15)); // output 115
+
+```
+**Currying Implementation**
+```js
+
+const tax = (taxAmount) => (price) => price+(price*taxAmount);
+
+const totalPrice= tax(0.15);
 
 console.log(totalPrice(30)); // output 34.5
 console.log(totalPrice(100)); // output 115
-
-```
-Currying implementation
-```js
-// currying implementation
-
-const totalPriceByCurrying = price => tax => price+(price*tax);
-
-console.log(totalPriceByCurrying(30)(0.15));
-console.log(totalPriceByCurrying(100)(0.20));
 ```
 ### Task queue, Micro Task queue, Macro task queue
 
