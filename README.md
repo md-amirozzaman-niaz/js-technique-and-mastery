@@ -22,7 +22,13 @@ Dynamically typed languages like Python and JavaScript offer more flexibility, b
 
 ### Mention some javascript Runtime environment?
 
-* [**Node.js**](https://github.com/nodejs/node) powered by c 
+* [**Node.js**](https://github.com/nodejs/node) is an open-source, cross-platform JavaScript runtime environment.
+* [**Deno**](https://deno.com/) Next-generation JavaScript runtime
+  .Secure by default
+  .Native support for TypeScript and JSX
+  .Testing, linting, formatting, and more out of the box
+  .High performance async I/O with Rust and Tokio
+  .Backwards compatible with Node.js and npm
 * [**Bun**](https://github.com/oven-sh/bun) At its core is the Bun runtime, a fast JavaScript runtime designed as a drop-in replacement for Node.js. It's written in **Zig** and powered by **JavaScriptCore** under the hood, dramatically reducing startup times and memory usage.
 * [**LLRT**](https://github.com/awslabs/llrt) LLRT (Low Latency Runtime) is a lightweight JavaScript runtime designed to address the growing demand for fast and efficient Serverless applications. LLRT offers up to over 10x faster startup and up to 2x overall lower cost compared to other JavaScript runtimes running on AWS Lambda. It's built in Rust, utilizing QuickJS as JavaScript engine, ensuring efficient memory usage and swift startup.
 * [**txiki**](https://github.com/saghul/txiki.js) A tiny JavaScript runtime
