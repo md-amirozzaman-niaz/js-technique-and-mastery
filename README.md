@@ -2,7 +2,20 @@
 
 ## Javascript
 JavaScript is a prototype-based language, which means that it uses prototypes to inherit properties and methods from one object to another. In JavaScript, objects can be linked to other objects, forming a prototype chain.
+
+### Mention some Browser Engine name?
+
+* **Webkit** Apple
+* **Gecko** Mozila
+* **Blink** Google
+  
 ### Mention some javascript engine name?
+
+* **Chakra** written in c++ for microsoft Edge browser
+* **V8** written in
+* **SpiderMonkey** written in 
+* **QuickJs** is an embeddable JS engine written in C
+* **JavaScriptCore** written in
 
 ### Primitive data type and non primitive data type?
 
