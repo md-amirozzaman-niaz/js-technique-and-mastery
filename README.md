@@ -111,7 +111,7 @@ Dynamically typed languages like Python and JavaScript offer more flexibility, b
 
 ### Hoisting
 
-JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables, classes, or imports to the top of their scope, prior to execution of the code.### Currying in javascritpt
+JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables, classes, or imports to the top of their scope, prior to execution of the code.
 
 ### Closure in javascript
 
@@ -136,7 +136,7 @@ console.log(composedFunction('hello')) // output 'olleh'
 Currying is a functional programming technique in JavaScript where a function with multiple arguments is transformed into a sequence of nested functions, each taking a single argument. The curried function returns a new function for each argument until all arguments have been supplied, at which point it executes and returns the result.
 
 **Example**
-
+**Usual Implementation**
 ```js
 
 const totalPrice = (price,taxAmount) => price+(price*taxAmount);
