@@ -130,17 +130,7 @@ console.log(composedFunction('hello')) // output 'olleh'
 ```
 ### Currying in javascript
 
-```js
-let prefix='#';
-
-const curry= (prefix,str) => `${prefix}${str}`;
-
-const addPrefix = (str) => curry(prefix,str);
-
-console.log(addPrefix('hello')); // output '#hello'
-console.log(addPrefix('world')); // output '#world'
-```
-Another example
+Example
 
 ```js
 let tax=0.15;
@@ -152,6 +142,16 @@ const totalPrice = (price) => price+calculateTax(price);
 
 console.log(totalPrice(30)); // output 34.5
 console.log(totalPrice(100)); // output 115
+
+```
+Currying implementation
+```js
+// currying implementation
+
+const totalPriceByCurrying = price => tax => price+(price*tax);
+
+console.log(totalPriceByCurrying(30)(0.15));
+console.log(totalPriceByCurrying(100)(0.20));
 ```
 ### Task queue, Micro Task queue, Macro task queue
 
