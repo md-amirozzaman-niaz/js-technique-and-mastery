@@ -105,6 +105,25 @@ Dynamically typed languages like Python and JavaScript offer more flexibility, b
 ### Type conversion in javascript
 [Read details](https://javascript.info/type-conversions)
 ### What is `Function Expression`?
+Function expressions are when you create a function and assign it to a variable. The function is anonymous, which means it doesn’t have a name.
+```js
+function funcDeclaration() {
+    return 'A function declaration';
+}
+
+let funcExpression = function () {
+    return 'A function expression';
+}
+```
+#### Difference between function expression and function decleration?
+There are a few key differences between function expressions and function declarations:
+
+- Function declarations are hoisted, while function expressions are not. This means that you can call a function declaration before it is defined, but you cannot do this with a function expression.
+- With function expressions, you can use a function immediately after it is defined. With function declarations, you have to wait until the entire script has been parsed.
+- Function expressions can be used as an argument to another function, but function declarations cannot.
+- Function expressions can be anonymous, while function declarations cannot.
+
+[Read details](https://www.sitepoint.com/when-to-use-a-function-expression-vs-function-declaration/)
 [Read details](https://javascript.info/function-expressions)
 ### What is iterable?
 [Read details](https://javascript.info/iterable)
