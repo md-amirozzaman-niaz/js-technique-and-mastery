@@ -235,7 +235,24 @@ console.log(startPiping('hello')); // output [ 'o', 'l', 'l', 'e', 'h' ]
 
 ### what is the difference between `Promise` and `Async await`?
 
-### How behave `Post increment/ decrement` and `Pre increment/ decrement` operator?
+### How behave `Postfix increment/ decrement` and `Prefix increment/ decrement` operator?
+If used postfix, with operator after operand (for example, x++), the increment operator increments and returns the value before incrementing.
+
+If used prefix, with operator before operand (for example, ++x), the increment operator increments and returns the value after incrementing.
+```js
+let x =3;
+let y=++x; // prefix increment return incremented value
+console.log(x,y,"x,y"); // 4,4
+y=x++; // postfix increment return without incremented value
+
+console.log(x,y,"x,y"); // 5,4
+
+y=--x; // prefix increment return decremented value
+console.log(x,y,"x,y"); // 4,4
+y=x--; // postfix increment return without decremented value
+
+console.log(x,y,"x,y"); // 3,4
+```
 
 ### How you achive Function chaining?
 
