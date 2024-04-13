@@ -1,4 +1,4 @@
-# js-technique-and-mastery
+# js-technique-and-topic
 
 ## Javascript
 JavaScript is a prototype-based language, which means that it uses prototypes to inherit properties and methods from one object to another. In JavaScript, objects can be linked to other objects, forming a prototype chain. Since JavaScript is a loosely typed language, you are not required to correctly predict the kind of data that will be kept in a variable.
@@ -66,29 +66,29 @@ Dynamically typed languages like Python and JavaScript offer more flexibility, b
     - `Boolean`
     - `Symbol`
 3. **Numbers and Dates** :These are the base objects representing numbers, dates, and mathematical calculations.
-    - Number
-    - BigInt
-    - Math
-    - Date
+    - `Number`
+    - `BigInt`
+    - `Math`
+    - `Date`
 4. **Function properties** : These global functions—functions which are called globally, rather than on an object—directly return their results to the caller.
-    - eval()
-    - isFinite()
-    - isNaN()
-    - parseFloat()
-    - parseInt()
-    - decodeURI()
-    - encodeURI()
+    - `eval()`
+    - `isFinite()`
+    - `isNaN()`
+    - `parseFloat()`
+    - `parseInt()`
+    - `decodeURI()`
+    - `encodeURI()`
 5. **Text processing** :These objects represent strings and support manipulating them.
-    - String
-    - RegExp
+    - `String`
+    - `RegExp`
 6. **Indexed collections** : These objects represent collections of data which are ordered by an index value.
     - [**Array**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
     - [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects#indexed_collections)
 7. **Keyed collections** :These objects represent collections which use keys.
     - [**Map**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
     - [**Set**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
-    - WeakMap
-    - WeakSet
+    - [WeakMap](/#)
+    - [WeakSet](/#)
 8. **Control abstraction objects** :Control abstractions can help to structure code, especially async code (without using deeply nested callbacks, for example).
     - [**Iterator**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Iterator)
     - AsyncIterator
@@ -101,9 +101,20 @@ Dynamically typed languages like Python and JavaScript offer more flexibility, b
 9. **Reflection** :
     - [**Reflect**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect)
     - [**Proxy**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy)
-
+[Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
 ### Type conversion in javascript
 [Read details](https://javascript.info/type-conversions)
+### What is iterable?
+[Read details](https://javascript.info/iterable)
+
+### Hoisting
+
+JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables, classes, or imports to the top of their scope, prior to execution of the code.
+
+### Higher Order Function
+
+In JavaScript, a higher-order function is a function that takes another function as an argument or returns a function as its result. Higher-order functions are a fundamental concept in functional programming and enable powerful and flexible programming paradigms such as function `composition`, `currying`, and `lazy evaluation`.
+
 ### What is `Function Expression`?
 Function expressions are when you create a function and assign it to a variable. The function is anonymous, which means it doesn’t have a name.
 ```js
@@ -118,24 +129,41 @@ let funcExpression = function () {
 #### Difference between function expression and function decleration?
 There are a few key differences between function expressions and function declarations:
 
-- Function declarations are hoisted, while function expressions are not. This means that you can call a function declaration before it is defined, but you cannot do this with a function expression.
+- Function declarations are ***hoisted***, while function expressions are not. This means that you can call a function declaration before it is defined, but you cannot do this with a function expression.
 - With function expressions, you can use a function immediately after it is defined. With function declarations, you have to wait until the entire script has been parsed.
 - Function expressions can be used as an argument to another function, but function declarations cannot.
 - Function expressions can be anonymous, while function declarations cannot.
 
 [Read details](https://www.sitepoint.com/when-to-use-a-function-expression-vs-function-declaration/)
 [Read details](https://javascript.info/function-expressions)
-### What is iterable?
-[Read details](https://javascript.info/iterable)
 
-### Hoisting
+### Immediately Invoked Function Expressions (IIFE)
+function expression that annonymouse and called immediately after its defined.
+```js
+(function () {
+    // code in here
+}());
+```
+and it's useful for maintainable module code with out side effecting as it is fall into a function scope of it's property and methods.
 
-JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables, classes, or imports to the top of their scope, prior to execution of the code.
+```js
+let myModule = (function () {
+    let privateMethod = function () {
+        console.log('A private method');
+    },
+    someMethod = function () {
+        console.log('A public method');
+    },
+    anotherMethod = function () {
+        console.log('Another public method');
+    };
 
-### Higher Order Function
-
-In JavaScript, a higher-order function is a function that takes another function as an argument or returns a function as its result. Higher-order functions are a fundamental concept in functional programming and enable powerful and flexible programming paradigms such as function `composition`, `currying`, and `lazy evaluation`.
-
+    return {
+        someMethod: someMethod,
+        anotherMethod: anotherMethod
+    };
+}());
+```
 ### Closure in javascript
 
 ### Currying in javascript
