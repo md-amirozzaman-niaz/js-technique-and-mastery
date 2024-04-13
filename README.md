@@ -33,6 +33,32 @@ Dynamically typed languages like Python and JavaScript offer more flexibility, b
 * [**Bun**](https://github.com/oven-sh/bun) At its core is the Bun runtime, a fast JavaScript runtime designed as a drop-in replacement for Node.js. It's written in **Zig** and powered by **JavaScriptCore** under the hood, dramatically reducing startup times and memory usage.
 * [**LLRT**](https://github.com/awslabs/llrt) LLRT (Low Latency Runtime) is a lightweight JavaScript runtime designed to address the growing demand for fast and efficient Serverless applications. LLRT offers up to over 10x faster startup and up to 2x overall lower cost compared to other JavaScript runtimes running on AWS Lambda. It's built in Rust, utilizing QuickJS as JavaScript engine, ensuring efficient memory usage and swift startup.
 * [**txiki**](https://github.com/saghul/txiki.js) A tiny JavaScript runtime
+### Specification ES5,ES6
+| ECMAScript Version | Release Year | Notable Features                              |
+|--------------------|--------------|-----------------------------------------------|
+| ES1                | 1997         | Initial version of ECMAScript.                |
+| ES2                | 1998         | Addition of try/catch statement, and method toLocaleString(). |
+| ES3                | 1999         | Introduction of new features like regular expressions, exceptions, and more robust error handling. |
+| ES5                | 2009         | Added 'strict mode', JSON support, getters and setters, and more array methods like forEach(), map(), and reduce(). |
+| ES6 / ES2015       | 2015         | Major update with significant additions including arrow functions, classes, template literals, let and const keywords, and more. |
+| ES7 / ES2016       | 2016         | Introduction of features like the exponentiation operator (`**`) and Array.prototype.includes(). |
+| ES8 / ES2017       | 2017         | Added async/await, Object.values/Object.entries, String padding, and more. |
+| ES9 / ES2018       | 2018         | Introduced features like asynchronous iteration, Rest/Spread Properties, and Promise.prototype.finally(). |
+| ES10 / ES2019      | 2019         | Added features like Array.prototype.flat(), Array.prototype.flatMap(), String.prototype.trimStart()/trimEnd(), and optional catch binding. |
+| ES11 / ES2020      | 2020         | Introduced features like BigInt, Promise.allSettled(), String.prototype.matchAll(), and globalThis. |
+| ES12 / ES2021      | 2021         | Added features like String.prototype.replaceAll(), Numeric separators, Logical Assignment Operators, and Promise.any(). |
+| ES13 / ES2022      | 2022         | Proposed features include Array.prototype.groupBy(), Object.observe(), and more. |
+
+### Mention some *Transpiler* AKA *Module Bundler*
+javaScript transcompiler that is mainly used to convert ECMAScript 2015+ code into backwards-compatible JavaScript code that can be run by older JavaScript engines. It allows web developers to take advantage of the newest features of the language.
+
+* [Vite](https://vitejs.dev/)
+* [Rollup](https://rollupjs.org/)
+* [Webpack](https://webpack.js.org/)
+* [Babel](https://babeljs.io/)
+* [TurboPack](https://turbo.build/)
+* [ESBuild](https://esbuild.github.io/)
+* [SWC](https://swc.rs/)
 
 ### Mention some Standard Library
 * [**Core-js**](https://github.com/zloirock/core-js) polyfills library.
