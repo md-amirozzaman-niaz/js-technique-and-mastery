@@ -130,6 +130,24 @@ javaScript transcompiler that is mainly used to convert ECMAScript 2015+ code in
 [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
 ### Type conversion in javascript
 [Read details](https://javascript.info/type-conversions)
+
+It’s preferred to capitalize a constructor function.
+```js
+function Car(make, model, year) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+}
+
+var car1 = new Car('Chevy', 'Blazer', 2015);
+var car2 = new Car('Ford', 'Taurus', 2018);
+
+console.log('Car 1 is a ' + car1.year + ' ' + car1.make + ' ' + car1.model);
+// Output: Car 1 is a 2015 Chevy Blazer
+
+console.log('Car 2 is a ' + car2.year + ' ' + car2.make + ' ' + car2.model);
+// Output: Car 2 is a 2018 Ford Taurus
+```
 ### What is iterable?
 
 Those object are working with `for...of` are iterable. Iterable objects like `arrays`, `strings`, `sets`, `maps`, etc. Now if `[Symbol.iterator]` implemented in object, it also work as iterable 
