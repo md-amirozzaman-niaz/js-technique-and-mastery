@@ -253,6 +253,12 @@ console.log(startPiping('hello')); // output [ 'o', 'l', 'l', 'e', 'h' ]
 ```
 ### Task queue [Micro Task queue | Macro task queue] > Event Loop > Call stack
 
+| Microtask Queue                | Macrotask Queue              |
+|--------------------------------|------------------------------|
+| Resolve promise A              | Read file (I/O operation)    |
+| Execute process.nextTick callbacks              | Timer (setTimeout, setInterval) |
+| Execute event emitter callbacks              | Network request (HTTP)       |
+
 ### ProtoType in javascript
 
 ### Recursion in javascript
