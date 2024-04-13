@@ -60,6 +60,12 @@ javaScript transcompiler that is mainly used to convert ECMAScript 2015+ code in
 * [ESBuild](https://esbuild.github.io/)
 * [SWC](https://swc.rs/)
 
+### WebSocket
+- peer-server-peer comunication
+- protocol `WS` / `WSS`
+### WebRTC
+- peer to peer comunication
+- protocol `UDP`
 ### Mention some Standard Library
 * [**Core-js**](https://github.com/zloirock/core-js) polyfills library.
 * [**stdlib**](https://github.com/stdlib-js/stdlib) (/ˈstændərd lɪb/ "standard lib") is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.
