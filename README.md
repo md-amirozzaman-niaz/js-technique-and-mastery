@@ -183,7 +183,7 @@ for (const key in person) {
 ### Hoisting
 
 JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables, classes, or imports to the top of their scope, prior to execution of the code.
-
+### [Constructor in Javascript](https://www.codecademy.com/resources/docs/javascript/constructors)
 ### Higher Order Function
 
 In JavaScript, a higher-order function is a function that takes another function as an argument or returns a function as its result. Higher-order functions are a fundamental concept in functional programming and enable powerful and flexible programming paradigms such as function `composition`, `currying`, and `lazy evaluation`.
