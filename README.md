@@ -33,7 +33,7 @@ Dynamically typed languages like Python and JavaScript offer more flexibility, b
 * [**Bun**](https://github.com/oven-sh/bun) At its core is the Bun runtime, a fast JavaScript runtime designed as a drop-in replacement for Node.js. It's written in **Zig** and powered by **JavaScriptCore** under the hood, dramatically reducing startup times and memory usage.
 * [**LLRT**](https://github.com/awslabs/llrt) LLRT (Low Latency Runtime) is a lightweight JavaScript runtime designed to address the growing demand for fast and efficient Serverless applications. LLRT offers up to over 10x faster startup and up to 2x overall lower cost compared to other JavaScript runtimes running on AWS Lambda. It's built in Rust, utilizing QuickJS as JavaScript engine, ensuring efficient memory usage and swift startup.
 * [**txiki**](https://github.com/saghul/txiki.js) A tiny JavaScript runtime
-### Specification ES5,ES6
+### [Specification](https://tc39.es/)
 | ECMAScript Version | Release Year | Notable Features                              |
 |--------------------|--------------|-----------------------------------------------|
 | ES1                | 1997         | Initial version of ECMAScript.                |
