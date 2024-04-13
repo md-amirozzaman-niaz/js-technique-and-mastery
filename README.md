@@ -126,7 +126,7 @@ let funcExpression = function () {
     return 'A function expression';
 }
 ```
-#### Difference between function expression and function decleration?
+#### Difference between *function expression* and *function decleration*?
 There are a few key differences between function expressions and function declarations:
 
 - Function declarations are ***hoisted***, while function expressions are not. This means that you can call a function declaration before it is defined, but you cannot do this with a function expression.
@@ -144,7 +144,7 @@ function expression that annonymouse and called immediately after its defined.
     // code in here
 }());
 ```
-and it's useful for maintainable module code with out side effecting as it is fall into a function scope of it's property and methods.
+and it's useful for maintainable module code with out side effecting as it is fall into a function scope with it's property and methods.
 
 ```js
 let myModule = (function () {
@@ -208,6 +208,36 @@ console.log(composedFunction('hello')) // output 'olleh'
 ```
 ### Lazy Evalution
 Lazy evaluation is a strategy where an expression is not evaluated until its value is actually needed. In JavaScript, this can be achieved using higher-order functions or by using generator functions. This technique can help improve performance and optimize memory usage in scenarios where computations are resource-intensive or when dealing with potentially infinite data sets.
+
+**Explaination**
+Suppose your script compute only array of size two, but given a large array dataset. How do you handle this situation, simple answer is by using `Lazy Evalution` strategy.
+```js
+function makeSmallDataSet(longDataSet) {
+  const chunks = [];
+  for (let i = 0; i < longDataSet.length; i += 2) {
+    const chunk = longDataSet.slice(i, i + 2);
+      chunks.push(chunk);
+  }
+  return chunks;
+}
+
+// Example long array
+const longArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+// Split the long array into 2x2 arrays
+const intermediateDataSet = makeSmallDataSet(longArray);
+console.log(intermediateDataSet); // [ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ], [ 7, 8 ], [ 9, 10 ], [ 11, 12 ] ]
+
+function lazyEvalution(data){
+    const chunks = makeSmallDataSet(data);
+    const cpuIntesiveTask= function (stream){
+      // now process two size array with cpu intensive function
+    }
+    for(let chunk of chunks){
+        cpuIntesiveTask(chunk);
+    }
+}
+```
 ### Pipeline in Javascript
 In JavaScript, a pipeline is a sequence of functions where the output of one function becomes the input of the next. It's a common pattern used for data transformation and processing, allowing you to compose complex operations by chaining together simpler functions.
 
