@@ -131,23 +131,6 @@ javaScript transcompiler that is mainly used to convert ECMAScript 2015+ code in
 ### Type conversion in javascript
 [Read details](https://javascript.info/type-conversions)
 
-It’s preferred to capitalize a constructor function.
-```js
-function Car(make, model, year) {
-  this.make = make;
-  this.model = model;
-  this.year = year;
-}
-
-var car1 = new Car('Chevy', 'Blazer', 2015);
-var car2 = new Car('Ford', 'Taurus', 2018);
-
-console.log('Car 1 is a ' + car1.year + ' ' + car1.make + ' ' + car1.model);
-// Output: Car 1 is a 2015 Chevy Blazer
-
-console.log('Car 2 is a ' + car2.year + ' ' + car2.make + ' ' + car2.model);
-// Output: Car 2 is a 2018 Ford Taurus
-```
 ### What is iterable?
 
 Those object are working with `for...of` are iterable. Iterable objects like `arrays`, `strings`, `sets`, `maps`, etc. Now if `[Symbol.iterator]` implemented in object, it also work as iterable 
@@ -202,6 +185,23 @@ for (const key in person) {
 
 JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables, classes, or imports to the top of their scope, prior to execution of the code.
 ### [Constructor in Javascript](https://www.codecademy.com/resources/docs/javascript/constructors)
+It’s preferred to capitalize a constructor function.
+```js
+function Car(make, model, year) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+}
+
+var car1 = new Car('Chevy', 'Blazer', 2015);
+var car2 = new Car('Ford', 'Taurus', 2018);
+
+console.log('Car 1 is a ' + car1.year + ' ' + car1.make + ' ' + car1.model);
+// Output: Car 1 is a 2015 Chevy Blazer
+
+console.log('Car 2 is a ' + car2.year + ' ' + car2.make + ' ' + car2.model);
+// Output: Car 2 is a 2018 Ford Taurus
+```
 ### Higher Order Function
 
 In JavaScript, a higher-order function is a function that takes another function as an argument or returns a function as its result. Higher-order functions are a fundamental concept in functional programming and enable powerful and flexible programming paradigms such as function `composition`, `currying`, and `lazy evaluation`.
