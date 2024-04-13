@@ -134,8 +134,8 @@ There are a few key differences between function expressions and function declar
 - Function expressions can be used as an argument to another function, but function declarations cannot.
 - Function expressions can be anonymous, while function declarations cannot.
 
-[Read details](https://www.sitepoint.com/when-to-use-a-function-expression-vs-function-declaration/)
-[Read details](https://javascript.info/function-expressions)
+* [when-to-use-a-function-expression-vs-function-declaration](https://www.sitepoint.com/when-to-use-a-function-expression-vs-function-declaration/)
+* [function-expressions](https://javascript.info/function-expressions)
 
 ### Immediately Invoked Function Expressions (IIFE)
 function expression that annonymouse and called immediately after its defined.
