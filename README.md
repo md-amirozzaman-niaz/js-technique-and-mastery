@@ -212,7 +212,35 @@ let myModule = (function () {
 }());
 ```
 ### Closure in javascript
+In JavaScript, a closure is a combination of a function and the lexical environment within which that function was declared. This lexical environment consists of any variables that were in scope at the time the closure was created.
+**Example**
+```js
+function queryBuilder() {
+  let query = '';
 
+  return function(statement) {
+    // query variable is in its parent scope or outer scope or in lexical scope
+    // it accessable even if outer function is executed
+    query+=statement;
+    if(statement === ';') {
+      let re = query;
+      query='';
+      return re;
+    }
+    return 'building....';
+  }
+}
+
+const query = queryBuilder();
+console.log(query('select'));
+console.log(query(' * '));
+console.log(query(' from '));
+console.log(query(' user where id=1'));
+console.log(query(';'));
+console.log(query('update set name="Jhon doe"'));
+console.log(query(' where id=5'));
+console.log(query(';'));
+```
 ### Currying in javascript
 Currying is a functional programming technique in JavaScript where a function with multiple arguments is transformed into a sequence of nested functions, each taking a single argument. The curried function returns a new function for each argument until all arguments have been supplied, at which point it executes and returns the result.
 
