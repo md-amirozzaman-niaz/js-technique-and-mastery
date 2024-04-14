@@ -434,6 +434,11 @@ const result = originalFunction.call(thisArg, [param1, param2, ...]);
 const boundFunction = originalFunction.bind(thisArg, param1, param2, ...);
 boundFunction();
 ```
+### which method are modified orginal array?
+`pop`, `push`, `shift`, and `splice` modify the original array.
+```js
+console.log([1,2,3].pop()) // return the
+```
 ### what will return when we call `arr.push()` and `arr.pop()`?
 
 ### Task queue [Micro Task queue | Macro task queue] > Event Loop > Call stack
