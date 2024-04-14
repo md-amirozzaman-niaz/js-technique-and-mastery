@@ -138,7 +138,8 @@ javaScript transcompiler that is mainly used to convert ECMAScript 2015+ code in
 [Read details](https://javascript.info/type-conversions)
 
 ### What is iterable?
-**index value**
+(**index value**)
+
 Those object are working with `for...of` are iterable. Iterable objects like `arrays`, `strings`, `sets`, `maps`, etc. Now if `[Symbol.iterator]` implemented in object, it also work as iterable 
 ```js
 let range = {
@@ -175,7 +176,8 @@ for (let num of range) {
 [Read details](https://javascript.info/iterable)
 
 ### What is emunarable?
-Those object are working with `for...in` are enumarable. **key value**
+(**key value**)
+Those object are working with `for...in` are enumarable.
 ```js
 const person = {
   name: 'John',
