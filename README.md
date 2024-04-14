@@ -377,6 +377,26 @@ const startPiping= makePipeline(split,reverse,join,split);
 console.log(startPiping('hello')); // output [ 'o', 'l', 'l', 'e', 'h' ]
 ```
 
+### How to make Object immutable?
+with `Object.freeze()` method you can set any object to immutable.
+```js
+const arr = [1, 2, 3, 4, 90];
+Object.freeze(arr);
+arr.pop(); // Throw TypeError
+```
+Only specific property to make immutable
+```js
+const person={
+  name:'John',
+  age:30
+}
+Object.defineProperty(person,'name',{
+  value:'Jane',
+  writable:false
+});
+person.name='Jane'; // TypeError: Cannot assign to read only property 'name' of object
+```
+
 ### ProtoType in javascript
 
 ### Recursion in javascript
