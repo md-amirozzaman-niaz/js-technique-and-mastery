@@ -138,7 +138,7 @@ javaScript transcompiler that is mainly used to convert ECMAScript 2015+ code in
 [Read details](https://javascript.info/type-conversions)
 
 ### What is iterable?
-
+**index value**
 Those object are working with `for...of` are iterable. Iterable objects like `arrays`, `strings`, `sets`, `maps`, etc. Now if `[Symbol.iterator]` implemented in object, it also work as iterable 
 ```js
 let range = {
@@ -175,7 +175,7 @@ for (let num of range) {
 [Read details](https://javascript.info/iterable)
 
 ### What is emunarable?
-Those object are working with `for...in` are enumarable.
+Those object are working with `for...in` are enumarable. **key value**
 ```js
 const person = {
   name: 'John',
@@ -272,7 +272,7 @@ function queryBuilder() {
     // query variable is in its parent scope or outer scope or in lexical scope
     // it accessable even if outer function is executed
     query+=statement;
-    if(statement === ';') {
+    if(statement.indexOf(';') > -1) {
       let re = query;
       query='';
       return re;
@@ -286,10 +286,7 @@ console.log(query('select'));
 console.log(query(' * '));
 console.log(query(' from '));
 console.log(query(' user where id=1'));
-console.log(query(';'));
-console.log(query('update set name="Jhon doe"'));
-console.log(query(' where id=5'));
-console.log(query(';'));
+console.log(query(' limit 1;')); // output 'select * from user where id=1 limit 1;'
 ```
 ### Currying in javascript
 Currying is a functional programming technique in JavaScript where a function with multiple arguments is transformed into a sequence of nested functions, each taking a single argument. The curried function returns a new function for each argument until all arguments have been supplied, at which point it executes and returns the result.
@@ -396,7 +393,17 @@ Object.defineProperty(person,'name',{
 });
 person.name='Jane'; // TypeError: Cannot assign to read only property 'name' of object
 ```
+### Implementing an Enum in JavaScript
+A way to implement an enum in JavaScript by creating an Object of key/value pairs and using the Object.freeze() function to make it immutable:
 
+```js
+  const directions = Object.freeze({ 
+    north: 0,
+    south: 1,
+    east: 2,
+    west: 3
+  });
+```
 ### ProtoType in javascript
 
 ### Recursion in javascript
