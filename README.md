@@ -376,13 +376,6 @@ const makePipeline = (...functions) => (str) => functions.reduce((acc,fn) => fn(
 const startPiping= makePipeline(split,reverse,join,split);
 console.log(startPiping('hello')); // output [ 'o', 'l', 'l', 'e', 'h' ]
 ```
-### Task queue [Micro Task queue | Macro task queue] > Event Loop > Call stack
-
-| Microtask Queue                | Macrotask Queue              |
-|--------------------------------|------------------------------|
-| Resolve promise A              | Read file (I/O operation)    |
-| Execute process.nextTick callbacks              | Timer (setTimeout, setInterval) |
-| Execute event emitter callbacks              | Network request (HTTP)       |
 
 ### ProtoType in javascript
 
@@ -420,9 +413,31 @@ console.log(x,y,"x,y"); // 3,4
 ### Explain Non Blocking I/O?
 
 ### explain `apply`, `call`, `bind`?
-
+You can `this` configurable with these methods,
+* `apply` with comma seperated params.
+```js
+```js
+const result = originalFunction.apply(thisArg, param1, param2, ...);
+```
+```
+* `call` with params in array
+```js
+const result = originalFunction.call(thisArg, [param1, param2, ...]);
+```
+* `bind` is currying implementation,it make invokable for later. You can call it later as many time as you need
+```js
+const boundFunction = originalFunction.bind(thisArg, param1, param2, ...);
+boundFunction();
+```
 ### what will return when we call `arr.push()` and `arr.pop()`?
 
+### Task queue [Micro Task queue | Macro task queue] > Event Loop > Call stack
+
+| Microtask Queue                | Macrotask Queue              |
+|--------------------------------|------------------------------|
+| Resolve promise A              | Read file (I/O operation)    |
+| Execute process.nextTick callbacks              | Timer (setTimeout, setInterval) |
+| Execute event emitter callbacks              | Network request (HTTP)       |
 ## Javascript Runtime (Node, Bun)
 
 ### [Important](https://nodejs.org/en/learn/asynchronous-work/dont-block-the-event-loop)
