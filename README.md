@@ -416,9 +416,14 @@ console.log(x,y,"x,y"); // 3,4
 You can `this` configurable with these methods,
 * `apply` with comma seperated params.
 ```js
-```js
+function originalFunction(param1,param2){
+    // as you see here is no reference for `name` variable
+    // when you call by "call", "apply", "bind"
+    // you pass a "object" which have a 'name' property
+    console.log(this.name);
+    return ;
+}
 const result = originalFunction.apply(thisArg, param1, param2, ...);
-```
 ```
 * `call` with params in array
 ```js
