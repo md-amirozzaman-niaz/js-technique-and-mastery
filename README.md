@@ -143,10 +143,10 @@ javaScript transcompiler that is mainly used to convert ECMAScript 2015+ code in
 **Numeric Conversion** – Occurs in math operations. Can be performed with Number(value).
 | Value       | Becomes                              |
 |-------------|--------------------------------------|
-| undefined   | NaN                                  |
-| null        | 0                                    |
-| true / false| 1 / 0                                |
-| string      | The string is read “as is”, whitespaces (includes spaces, tabs \t, newlines \n etc.) from both sides are ignored. An empty string becomes 0. An error gives NaN. |
+| `undefined`   |`NaN`                                  |
+| `null`       | 0                                    |
+| `true` / `false`| 1 / 0                                |
+| `string`     | The string is read “as is”, whitespaces (includes spaces, tabs \t, newlines \n etc.) from both sides are ignored. An empty string becomes 0. An error gives NaN. |
 
 **Boolean Conversion** – Occurs in logical operations. Can be performed with Boolean(value).
 
@@ -154,7 +154,7 @@ Follows the rules:
 
 | Value                             | Becomes                              |
 |-----------------------------------|--------------------------------------|
-| 0, null, undefined, NaN, ""      | false                                |
+| `0`, `null`, `undefined`, `NaN`, ""      | false                                |
 | any other value                  | true                                 |
 
 [Read details](https://javascript.info/type-conversions)
