@@ -240,7 +240,25 @@ There are a few key differences between function expressions and function declar
 
 * [when-to-use-a-function-expression-vs-function-declaration](https://www.sitepoint.com/when-to-use-a-function-expression-vs-function-declaration/)
 * [function-expressions](https://javascript.info/function-expressions)
+### Describe "use stict"?
+"Use strict" is like setting rules for your JavaScript code. It makes sure your code follows stricter guidelines, catching mistakes that could cause problems later on. It helps you write cleaner, safer code by enforcing better coding practices.
 
+Without "use strict":
+
+```js
+// This code will run without any warnings
+x = 10; // No need to declare 'x' with var, let, or const
+console.log(x); // Outputs 10
+```
+With "use strict":
+
+```js
+"use strict";
+// This code will show an error
+x = 10; // Error: 'x' is not defined
+console.log(x); // This line won't be executed due to the error above
+```
+> Note: Javascript `ES6 Module` and `Class` are built-in strict mode.
 ### Immediately Invoked Function Expressions (IIFE)
 function expression that annonymouse and called immediately after its defined.
 ```js
