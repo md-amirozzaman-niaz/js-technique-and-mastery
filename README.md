@@ -70,6 +70,11 @@ javaScript transcompiler that is mainly used to convert ECMAScript 2015+ code in
 * [**Core-js**](https://github.com/zloirock/core-js) polyfills library.
 * [**stdlib**](https://github.com/stdlib-js/stdlib) (/ˈstændərd lɪb/ "standard lib") is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.
 
+### Some Tool
+* [**EsLint**](https://eslint.org/)
+* [jsLint](https://www.jslint.com/)
+* [**TypeScript**](https://www.typescriptlang.org/docs/handbook/) is super-set of javascript.
+* [**tsConfig**](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
 ### Primitive data type and non primitive data type?
 - **Primitive** The predefined data types provided by JavaScript language are known as primitive data types. Primitive data types are also known as in-built data types.
     1. **String**.
