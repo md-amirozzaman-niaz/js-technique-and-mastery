@@ -140,6 +140,19 @@ javaScript transcompiler that is mainly used to convert ECMAScript 2015+ code in
     - [**Reflect**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect)
     - [**Proxy**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy)
 [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
+### Mention some array method which are modified orginal `array` and mention some method which are not modifying orginal `array`
+Modifying Orginal Array
+* `arr.pop()` remove from last index and return `removed item`
+* `arr.push()` insert in last index and return `length of modified array`
+* `arr.unshift()` insert in first index and return `length of modified array`
+* `arr.shift()` remove from fisrt index and return `removed item`
+* `arr.splice(fromIndex,length)` remove from index to length and return `new array with removed values`
+* `arr.reverse()` reverse the original array and return `reversed array`
+Not modifying Orginal Array
+* `[1,2,3].map(e=>e*2)` return new array [2,4,6]
+* `[2,4,6].filter(e=>e>2` return new array [6]
+* `[1,2,3,4,5].slice(startIndex,endIndex)` return new array with the new slice, **endIndex is not include**
+* `[1,2,3].concat([4,5])` merge the array with existing one and return new array
 ### Type conversion in javascript
 **Numeric Conversion** – Occurs in math operations. Can be performed with Number(value).
 | Value       | Becomes                              |
