@@ -89,7 +89,7 @@ javaScript transcompiler that is mainly used to convert ECMAScript 2015+ code in
     1. **Object**. > typeof {test:123} // object
     2. **Function** > typeof function(){} // function
     3. **Array**. > typeof [1,2,3] // object
-    4. [**Map**](https://javascript.info/map-set)
+    4. [**Map**](https://javascript.info/map-set) // typeof new Map([['a',1],['b',2]); // object
     5. [**Set**](https://javascript.info/map-set)
 ### Mention some [Standard built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
 #### Standard objects by category
@@ -462,6 +462,16 @@ A way to implement an enum in JavaScript by creating an Object of key/value pair
   });
 ```
 ### ProtoType in javascript
+Every data types in js are extended from `Object` except `null`
+```js
+const arr= [1,2,3];
+console.log(arr.__proto__);
+// it log all array functionality
+console.log(arr.__proto__.__proto__);
+// it log all object functionality
+console.log(arr.__proto__.__proto__.__proto__);
+// it log null and proto chaining is stop
+```
 
 ### Recursion in javascript
 
