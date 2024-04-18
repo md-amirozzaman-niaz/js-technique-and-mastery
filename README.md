@@ -66,6 +66,7 @@ javaScript transcompiler that is mainly used to convert ECMAScript 2015+ code in
 ### [WebRTC](https://webrtc.org/getting-started/overview)
 - peer to peer comunication
 - protocol `UDP`
+> User Datagram Protocol (UDP) is a communications protocol for time-sensitive applications like gaming, playing videos, or Domain Name System (DNS) lookups.
 
 ### [Web API](https://developer.mozilla.org/en-US/docs/Web/API)
 ### Mention some Standard Library
