@@ -77,6 +77,8 @@ javaScript transcompiler that is mainly used to convert ECMAScript 2015+ code in
 * [moment](https://github.com/moment/moment)
 * [async](https://github.com/caolan/async)
 * [collect.js](https://github.com/ecrmnn/collect.js)
+* [enquirer](https://github.com/enquirer/enquirer) Stylish, intuitive and user-friendly prompts, for Node.js.
+* [chalk](https://github.com/chalk/chalk)
 
 ### Some Tool
 * [**EsLint**](https://eslint.org/)
