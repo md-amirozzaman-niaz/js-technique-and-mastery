@@ -72,6 +72,10 @@ javaScript transcompiler that is mainly used to convert ECMAScript 2015+ code in
 * [**Core-js**](https://github.com/zloirock/core-js) polyfills library.
 * [**stdlib**](https://github.com/stdlib-js/stdlib) (/ˈstændərd lɪb/ "standard lib") is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.
 * [RxJS](https://github.com/ReactiveX/rxjs) A reactive programming library for JavaScript
+* [lodash](https://github.com/lodash/lodash)
+* [moment](https://github.com/moment/moment)
+* [async](https://github.com/caolan/async)
+* [collect.js](https://github.com/ecrmnn/collect.js)
 
 ### Some Tool
 * [**EsLint**](https://eslint.org/)
