@@ -163,6 +163,10 @@ javaScript transcompiler that is mainly used to convert ECMAScript 2015+ code in
 * `[2,4,6].filter(e=>e>2` return new array [6]
 * `[1,2,3,4,5].slice(startIndex,endIndex)` return new array with the new slice, **endIndex is not include**
 * `[1,2,3].concat([4,5])` merge the array with existing one and return new array
+
+**Create New Array**
+* **Array.from** : `const arr = Array.from({length:5},(_,index) => index+1) // [1,2,3,4,5]`
+* **Array.prototype.fill**: `arr.fill(0) // [0,0,0,0,0]`
 ### Type conversion in javascript
 **Numeric Conversion** – Occurs in math operations. Can be performed with Number(value).
 | Value       | Becomes                              |
