@@ -69,6 +69,9 @@ javaScript transcompiler that is mainly used to convert ECMAScript 2015+ code in
 > User Datagram Protocol (UDP) is a communications protocol for time-sensitive applications like gaming, playing videos, or Domain Name System (DNS) lookups.
 
 ### [Web API](https://developer.mozilla.org/en-US/docs/Web/API)
+* [MutationObserver](
+https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver)
+
 ### Mention some Standard Library
 * [**Core-js**](https://github.com/zloirock/core-js) polyfills library.
 * [**stdlib**](https://github.com/stdlib-js/stdlib) (/ˈstændərd lɪb/ "standard lib") is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.
