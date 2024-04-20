@@ -15,7 +15,7 @@ Dynamically typed languages like Python and JavaScript offer more flexibility, b
 * **Chakra** written in c++ for microsoft used by Edge browser
 * [**V8**](https://v8.dev/) is Google’s open source high-performance JavaScript and WebAssembly engine, written in C++. It is used in Chrome and in Node.js, among others. It implements [ECMAScript](https://tc39.es/ecma262/) and [WebAssembly](https://webassembly.github.io/spec/core/), and runs on Windows 7 or later, macOS 10.12+, and Linux systems that use x64, IA-32, ARM, or MIPS processors. V8 can run standalone, or can be embedded into any C++ application.
 * [**SpiderMonkey**](https://spidermonkey.dev/) is Mozilla’s JavaScript and [WebAssembly](https://webassembly.github.io/spec/core/) Engine, used in Firefox, Servo and various other projects. It is written in C++, Rust and JavaScript. You can embed it into C++ and Rust projects, and it can be run as a stand-alone shell. It can also be compiled to WASI; see our online demo.
-* [**JavaScriptCore**](https://developer.apple.com/documentation/javascriptcore) written in Objective-c, used by Safari browser.
+* [**JavaScriptCore**](https://developer.apple.com/documentation/javascriptcore) written in Objective-c, used by Safari browser.(also called **Nitro**)
 
 * [**QuickJs**](https://github.com/bellard/quickjs) is an embeddable JS engine written in C.
 * [**Hermes**](https://github.com/facebook/hermes/) is a JavaScript engine optimized for fast start-up of **React Native** apps.
