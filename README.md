@@ -60,6 +60,12 @@ javaScript transcompiler that is mainly used to convert ECMAScript 2015+ code in
 * [ESBuild](https://esbuild.github.io/)
 * [SWC](https://swc.rs/)
 
+### [Web API](https://developer.mozilla.org/en-US/docs/Web/API)
+* [MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver)
+* [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController)
+* [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+* [Stream API](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API)
+* 
 ### WebSocket
 - peer-server-peer comunication
 - protocol `WS` / `WSS`
@@ -67,10 +73,6 @@ javaScript transcompiler that is mainly used to convert ECMAScript 2015+ code in
 - peer to peer comunication
 - protocol `UDP`
 > User Datagram Protocol (UDP) is a communications protocol for time-sensitive applications like gaming, playing videos, or Domain Name System (DNS) lookups.
-
-### [Web API](https://developer.mozilla.org/en-US/docs/Web/API)
-* [MutationObserver](
-https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver)
 
 ### Mention some Standard Library
 * [**Core-js**](https://github.com/zloirock/core-js) polyfills library.
@@ -144,6 +146,19 @@ https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver)
     - AsyncIterator
     - [**Promise**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
     - GeneratorFunction
+      ```js
+        function* generator(i,s) {
+          while (i<s){
+            yield i++;
+          }
+        }
+        
+        const range = generator(0,10);
+
+        for(let step of range){
+          console.log(step);
+        }
+      ```
     - AsyncGeneratorFunction
     - [**Generator**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator)
     - AsyncGenerator
