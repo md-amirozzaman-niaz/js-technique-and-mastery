@@ -147,8 +147,8 @@ javaScript transcompiler that is mainly used to convert ECMAScript 2015+ code in
     - [**Promise**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
     - GeneratorFunction
       ```js
-        function* generator(i,s) {
-          while (i<s){
+        function* generator(i,end) {
+          while (i<end){
             yield i++;
           }
         }
@@ -158,6 +158,7 @@ javaScript transcompiler that is mainly used to convert ECMAScript 2015+ code in
         for(let step of range){
           console.log(step);
         }
+        // 0,1,2,3,....,9
       ```
     - AsyncGeneratorFunction
     - [**Generator**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator)
