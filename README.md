@@ -178,6 +178,16 @@ javaScript transcompiler that is mainly used to convert ECMAScript 2015+ code in
     - [**Iterator**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Iterator)
     - AsyncIterator
     - [**Promise**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+      There are three status with in promise
+      `pending`: initial state, neither fulfilled nor rejected.
+      `fulfilled`: meaning that the operation was completed successfully.
+      `rejected`: meaning that the operation failed.
+      ```js
+        Promise<pending>
+        .then(()=>// Promise<fulfilled>)
+        .catch(()=> // Promise<rejected>)
+        .final(()=> // this is last code of block which always execute end of everything)
+      ```
     - GeneratorFunction
       ```js
         function* generator(i,end) {
