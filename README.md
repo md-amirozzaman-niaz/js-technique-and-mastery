@@ -92,18 +92,51 @@ javaScript transcompiler that is mainly used to convert ECMAScript 2015+ code in
 * [**tsConfig**](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
 ### Primitive data type and non primitive data type?
 - **Primitive** The predefined data types provided by JavaScript language are known as primitive data types. Primitive data types are also known as in-built data types.
-    1. **String**. ```js typeof 'hello world' // string;```
-    2. **Number**. ```js typeof 123 // number ```
-    3. **Bigint**. ```js typeof 2n // bigint ```
-    4. **Boolean**. ```js typeof true // boolean ```
-    5. **Undefined**. ```js typeof undefined // undefined ```
-    6. **Null**. ```js typeof null // object ```
-    7. **Symbol**. ```js typeof Symbol('test') // symbol ```
+    1. **String**.
+       ```js
+       typeof 'hello world' // string;
+       ```
+    2. **Number**.
+       ```js
+       typeof 123 // number
+       ```
+    3. **Bigint**.
+       ```js
+       typeof 2n // bigint
+       ```
+    4. **Boolean**.
+       ```js
+       typeof true // boolean
+       ```
+    5. **Undefined**.
+       ```js
+       typeof undefined // undefined
+       ```
+    6. **Null**.
+       ```js
+       typeof null // object
+       ```
+    7. **Symbol**.
+       ```js
+       typeof Symbol('test') // symbol
+       ```
 - **Non Primitive** The data types that are derived from primitive data types of the JavaScript language are known as non-primitive data types. It is also known as derived data types or reference data types.
-    1. **Object**. > typeof {test:123} // object
-    2. **Function** > typeof function(){} // function
-    3. **Array**. > typeof [1,2,3] // object
-    4. [**Map**](https://javascript.info/map-set) // typeof new Map([['a',1],['b',2]); // object
+    1. **Object**.
+       ```js
+       typeof {test:123} // object
+       ```
+    2. **Function**
+       ```js
+       typeof function(){} // function
+       ```
+    3. **Array**.
+       ```js
+        typeof [1,2,3] // object
+       ```
+    4. [**Map**](https://javascript.info/map-set)
+       ```js
+        typeof new Map([['a',1],['b',2]); // object
+       ```
     5. [**Set**](https://javascript.info/map-set)
 ### Mention some [Standard built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
 #### Standard objects by category
