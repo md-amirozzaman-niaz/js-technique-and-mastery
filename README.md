@@ -192,18 +192,18 @@ javaScript transcompiler that is mainly used to convert ECMAScript 2015+ code in
         > Fulfills when all of the promises fulfill; rejects when any of the promises rejects.
        - Promise.any([]): static method takes an `iterable` of promises as input and returns a single `Promise`.
         > Fulfills when any of the promises fulfills; rejects when all of the promises reject.
+        **Important Note**
         > You may compare `Promise.any()` and `Promise.all()` with `Array.prototype.some()` and `Array.prototype.every()`.
        - **Promise.allSetteled([])**: will wait for all input promises to complete, regardless of whether or not one rejects.
         > Fulfills when all promises settle.
+        And
         > Return `results` object with below data
         > `status`:
-          A string, either "fulfilled" or "rejected", indicating the eventual state of the promise.
-
-          `value`:
-          Only present if status is "fulfilled". The value that the promise was fulfilled with.
-
-          `reason`:
-          Only present if status is "rejected". The reason that the promise was rejected with.
+        > A string, either "fulfilled" or "rejected", indicating the eventual state of the promise.
+        > `value`:
+        > Only present if status is "fulfilled". The value that the promise was fulfilled with.
+        > `reason`:
+        > Only present if status is "rejected". The reason that the promise was rejected with.
        - Promise.race([])
     - GeneratorFunction
       ```js
