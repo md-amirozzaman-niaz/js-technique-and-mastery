@@ -135,9 +135,12 @@ javaScript transcompiler that is mainly used to convert ECMAScript 2015+ code in
        ```
     4. [**Map**](https://javascript.info/map-set)
        ```js
-        typeof new Map([['a',1],['b',2]); // object
+        typeof new Map([['a',1],['b',2]]); // object
        ```
     5. [**Set**](https://javascript.info/map-set)
+       ```js
+        typeof new Map([['a',1],['b',2]]); // object
+       ```
 ### Mention some [Standard built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
 #### Standard objects by category
 1. **Value properties** :These global properties return a simple value. They have no properties or methods.
