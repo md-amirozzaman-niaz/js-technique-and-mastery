@@ -230,7 +230,8 @@ javaScript transcompiler that is mainly used to convert ECMAScript 2015+ code in
 9. **Reflection** :
     - [**Reflect**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect)
     - [**Proxy**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy)
-[Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
+    - ....
+    - [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
 ### Mention some array method which are modified orginal `array` and mention some method which are not modifying orginal `array`
 **Modifying Orginal Array**
 * `arr.pop()` remove from last index and return `removed item`
@@ -341,6 +342,31 @@ console.log('Car 1 is a ' + car1.year + ' ' + car1.make + ' ' + car1.model);
 
 console.log('Car 2 is a ' + car2.year + ' ' + car2.make + ' ' + car2.model);
 // Output: Car 2 is a 2018 Ford Taurus
+```
+### Pure function
+In JavaScript, a pure function is a function that, given the same input, will always return the same output, and it has no side effects.
+
+Here's a breakdown of those two key characteristics:
+
+Deterministic: A pure function will always produce the same output given the same input. There's no randomness involved.
+No Side Effects: A pure function doesn't modify variables outside its scope, mutate its arguments, perform I/O operations (like reading from files or modifying DOM elements), or interact with the external world in any other way. Its only effect is to compute the return value.
+For example:
+```js
+// Pure function
+function add(a, b) {
+    return a + b;
+}
+
+// Impure function (has side effect)
+let result = 0;
+function addToResult(x) {
+    result += x;
+}
+
+// Impure function (returns different values for same input)
+function getRandomNumber() {
+    return Math.random();
+}
 ```
 ### Higher Order Function
 
